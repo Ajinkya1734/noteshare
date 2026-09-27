@@ -49,5 +49,10 @@ def api_notes():
 def health():
     return {"status": "ok", "commit": COMMIT_HASH}
 
+@app.route("/clear", methods=["POST"])
+def clear_registry():
+    notes_registry.clear()
+    return redirect("/")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
