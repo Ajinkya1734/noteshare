@@ -37,3 +37,18 @@ def test_blank_field_submission_rejected():
     })
     assert bad_submission.status_code == 400
     assert bad_submission.json["status"] == "error"
+
+
+def test_registry_clear_wipes_all_data():
+    c = client()
+    c.post("/share", data={
+        "title": "Cloud Computing Blueprint",
+        "link": "https://google.com",
+        "category": "Lecture Notes",
+        "contributor": "103221"
+    })
+    clear_res = c.post("/clear")
+    assert clear_res.status_code == 302
+    
+    home_view = c.get("/").data
+    assert b"Registry Status: 0 documents indexed" in home_view
