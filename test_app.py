@@ -33,3 +33,4 @@ def test_blank_field_submission_rejected():
         "contributor": ""
     })
     assert bad_submission.status_code == 400
+    assert bad_submission.json["status"] == "error"
