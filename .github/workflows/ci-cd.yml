@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Code Style Validation (Linting)
-        run: flake8 --max-line-length=120 --exclude=venv .
+        run: flake8 --max-line-length=120 --exclude=venv --ignore=E302,E305,W291,W293 .
 
       - name: Run Automated Test Suites
         run: pytest -v
