@@ -31,7 +31,7 @@ def share_material():
 
     # Dynamic Validation Quality Gate
     if not title or not link or not contributor:
-        return "Error: Document Title, Material Link, and Contributor Name are all mandatory.", 400
+    return {"status": "error", "message": "All fields are mandatory."}, 400
 
     notes_registry.append({
         "title": title,
