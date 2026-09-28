@@ -3,7 +3,7 @@
 NoteShare is a dynamic, localized peer-to-peer study registry built for campus environments. It allows students to catalog, categorize, and discover reference materials, question banks, and lab manuals. The project leverages an automated DevOps pipeline to enforce strict quality gates and conditional blue-green style cloud deployments.
 
 ## 🚀 Live Environment Links
-* **Live Web Application URL:** [https://onrender.com](https://onrender.com)
+* **Live Web Application URL:** [(https://noteshare-b4c2.onrender.com/)](https://onrender.com)
 * **GitHub Project Repository:** [https://github.com](https://github.com)
 
 ---
