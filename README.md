@@ -4,7 +4,7 @@ NoteShare is a dynamic, localized peer-to-peer study registry built for campus e
 
 ## 🚀 Live Environment Links
 * **Live Web Application URL:** [https://noteshare-b4c2.onrender.com](https://noteshare-b4c2.onrender.com)
-* **GitHub Project Repository:** [https://github.com](https://github.com)
+* **GitHub Project Repository:** [https://github.com/Ajinkya1734/noteshare](https://github.com/Ajinkya1734/noteshare)
 
 ---
 
